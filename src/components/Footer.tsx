@@ -1,4 +1,4 @@
-import { ShoppingBasket, MessageCircle, MapPin, Clock } from "lucide-react";
+import { ShoppingBasket, MessageCircle, MapPin, Clock, Mail } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -30,10 +30,17 @@ const Footer = () => {
                 className="flex items-center gap-3 hover:text-primary transition-colors group"
               >
                 <MessageCircle className="w-4 h-4 group-hover:scale-110 transition-transform" />
-                +58 0422-1790195
+                +58 422-1790195
+              </a>
+              <a
+                href="mailto:bodegonbenditohogarlnl@gmail.com"
+                className="flex items-center gap-3 hover:text-primary transition-colors group break-all"
+              >
+                <Mail className="w-4 h-4 shrink-0" />
+                bodegonbenditohogarlnl@gmail.com
               </a>
               <p className="flex items-center gap-3">
-                <MapPin className="w-4 h-4" />
+                <MapPin className="w-4 h-4 shrink-0" />
                 Jacura, Venezuela
               </p>
             </div>

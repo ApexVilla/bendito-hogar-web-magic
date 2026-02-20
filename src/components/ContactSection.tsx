@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
-import { MessageCircle, MapPin, Clock, Phone, Send, CheckCircle } from "lucide-react";
+import { MessageCircle, MapPin, Clock, Phone, Send, CheckCircle, Mail } from "lucide-react";
 
 const ContactSection = () => {
   const ref = useRef(null);
@@ -24,7 +24,16 @@ const ContactSection = () => {
       title: "WhatsApp",
       content: (
         <a href="https://wa.me/584221790195" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">
-          +58 0422-1790195
+          +58 422-1790195
+        </a>
+      ),
+    },
+    {
+      icon: Mail,
+      title: "Correo",
+      content: (
+        <a href="mailto:bodegonbenditohogarlnl@gmail.com" className="text-primary hover:underline font-medium break-all text-sm">
+          bodegonbenditohogarlnl@gmail.com
         </a>
       ),
     },
