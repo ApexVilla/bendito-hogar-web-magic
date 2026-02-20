@@ -12,15 +12,30 @@ const CartDrawer = () => {
     const handleCheckout = () => {
         const phoneNumber = "584221790195";
 
-        let message = "🛒 *Nuevo Pedido*\n\n📦 *Productos:*\n";
+        let message = "╔══════════════════╗\n";
+        message += "     *PEDIDO NUEVO*\n";
+        message += "   Minimarket Bendito Hogar\n";
+        message += "╚══════════════════╝\n\n";
 
-        items.forEach((item) => {
+        message += "*Productos solicitados:*\n";
+        message += "─────────────────────\n";
+
+        items.forEach((item, index) => {
             const subtotal = (item.price * item.quantity).toFixed(2);
-            message += `- ${item.quantity}x ${item.name} - $${item.price.toFixed(2)} = $${subtotal}\n`;
+            message += `${index + 1}. *${item.name}*\n`;
+            message += `   Cant: ${item.quantity} × $${item.price.toFixed(2)} = *$${subtotal}*\n`;
         });
 
-        message += `\n💰 *Total: $${totalPrice.toFixed(2)}*\n\n`;
-        message += "👤 Nombre: \n📍 Dirección: ";
+        message += "─────────────────────\n";
+        message += `Artículos: ${items.reduce((acc, item) => acc + item.quantity, 0)}\n`;
+        message += `*TOTAL A PAGAR: $${totalPrice.toFixed(2)}*\n\n`;
+
+        message += "*Datos del cliente:*\n";
+        message += "Nombre: \n";
+        message += "Dirección: \n";
+        message += "Método de pago: \n\n";
+
+        message += "_Gracias por comprar en Bendito Hogar_";
 
         const encodedMessage = encodeURIComponent(message);
         window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, "_blank");

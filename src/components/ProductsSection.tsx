@@ -12,7 +12,11 @@ import {
   DialogDescription,
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
-import catViveres from "@/assets/cat-viveres.jpg";
+import catViveres from "@/assets/cat-viveres-bundle.jpg";
+import catCafe from "@/assets/cat-cafe.png";
+import catLacteos from "@/assets/cat-lacteos.png";
+import catEnlatados from "@/assets/cat-enlatados.png";
+import catCondimentos from "@/assets/cat-condimentos.png";
 import catHigiene from "@/assets/cat-higiene.jpg";
 import catLimpieza from "@/assets/cat-limpieza.jpg";
 import catCharcuteria from "@/assets/cat-charcuteria.jpg";
@@ -56,6 +60,36 @@ import productMayonesaKraft445g from "@/assets/product-mayonesa-kraft-445g.png";
 import productMayonesaKraft175g from "@/assets/product-mayonesa-kraft-175g.png";
 import productAceiteVatel1l from "@/assets/product-aceite-vatel-1l.png";
 import productAceiteAmacorp900ml from "@/assets/product-aceite-amacorp-900ml.png";
+import productArrozAmanecer900g from "@/assets/product-arroz-amanecer-900g.png";
+import productAzucarAmanecer1kg from "@/assets/product-azucar-amanecer-1kg.png";
+import productAceiteAmanecer828ml from "@/assets/product-aceite-amanecer-828ml.png";
+import productAceiteAmanecer500ml from "@/assets/product-aceite-amanecer-500ml.png";
+import productCaraotasNegrasAmanecer400g from "@/assets/product-caraotas-negras-amanecer-400g.png";
+import productLentejasAmanecer400g from "@/assets/product-lentejas-amanecer-400g.png";
+import productCafeFamaAmerica250g from "@/assets/product-cafe-fama-america-250g.png";
+import productCafeFamaAmerica500g from "@/assets/product-cafe-fama-america-500g.png";
+import productCafeFlorDeArauca200g from "@/assets/product-cafe-flor-de-arauca-200g.png";
+import productCafeFlorDeArauca500g from "@/assets/product-cafe-flor-de-arauca-500g.png";
+import productCafeAmanecer100g from "@/assets/product-cafe-amanecer-100g.png";
+import productCafeTurpial250g from "@/assets/product-cafe-turpial-250g.png";
+import productCafeTurpial500g from "@/assets/product-cafe-turpial-500g.png";
+import productColoranteAmparito20g from "@/assets/product-colorante-amparito-20g.png";
+import productColorOnotoAmparito20g from "@/assets/product-color-onoto-amparito-20g.png";
+import productBicarbonatoSodioAmparito20g from "@/assets/product-bicarbonato-sodio-amparito-20g.png";
+import productGutAdoboCompleto24g from "@/assets/product-gut-adobo-completo-24g.png";
+import productGutAjoCebollaPerejil20g from "@/assets/product-gut-ajo-cebolla-perejil-20g.png";
+import productGutCaldoPollo24g from "@/assets/product-gut-caldo-pollo-24g.png";
+import productGutSabroseadorCompleto24g from "@/assets/product-gut-sabroseador-completo-24g.png";
+import productGutSalsaEspaguettis34g from "@/assets/product-gut-salsa-espaguettis-34g.png";
+import productGutSazonadorArrozPollo35g from "@/assets/product-gut-sazonador-arroz-pollo-35g.png";
+import productPapelRosalPlus180h from "@/assets/product-papel-rosal-plus-180h-4unid.jpg";
+import productPapelRosalPlus400h from "@/assets/product-papel-rosal-plus-400h-4unid.png";
+import productPapelRosalPlus600h from "@/assets/product-papel-rosal-plus-600h-4unid.png";
+import productLavaplatosLlavesCrema250g from "@/assets/product-lavaplatos-llaves-crema-250g.png";
+import productLavaplatosLlavesCrema500g from "@/assets/product-lavaplatos-llaves-crema-500g.png";
+import productPapelLucianoMorado215h from "@/assets/product-papel-luciano-morado-215h-4unid.png";
+import productCafeAmanecer200g from "@/assets/product-cafe-amanecer-200g.png";
+import productCafeAmanecer500g from "@/assets/product-cafe-amanecer-500g.png";
 
 const categories = [
   {
@@ -64,6 +98,15 @@ const categories = [
     image: catViveres,
     description: "Productos esenciales para tu hogar: Arroz, Pasta, Harina y Granos.",
     products: [
+      {
+        id: "v1a",
+        name: "Harina Pan",
+        desc: "Harina de maíz blanco precocida",
+        price: 1.20,
+        image: productHarinaPan,
+        badge: "Bulto (Caja cerrada) trae 20 unidades",
+        details: { unit: "1kg", quality: "Maíz Blanco", bulk: "20 Unidades", origin: "Venezuela" }
+      },
       {
         id: "v1",
         name: "Harina Juana (Roja)",
@@ -236,11 +279,11 @@ const categories = [
         details: { unit: "500g", quality: "Pluma Premium", bulk: "20 Unidades", origin: "Venezuela" }
       },
       { id: "v2", name: "Arroz Amanecer", desc: "Arroz blanco de mesa tipo I", price: 0.00, details: { unit: "900g", quality: "Tipo I", bulk: "20 Unidades" } },
-      { id: "v14", name: "Arroz Mary Tradicional", desc: "Arroz blanco de mesa", price: 0.00, details: { unit: "1kg", quality: "Tradicional", bulk: "24 Unidades" } },
-
+      { id: "v17", name: "Arroz Mónica", desc: "Arroz blanco", price: 0.00, details: { unit: "1kg", quality: "Blanco", bulk: "24 Unidades" } },
       { id: "v18", name: "Arroz Mónica", desc: "Arroz blanco", price: 0.00, details: { unit: "500g", quality: "Blanco", bulk: "12 Unidades" } },
       { id: "v19", name: "Arroz Mónica", desc: "Arroz blanco", price: 0.00, details: { unit: "900g", quality: "Blanco", bulk: "24 Unidades" } },
-      { id: "v5", name: "Azúcar Amanecer", desc: "Refinada de primera calidad", price: 0.00, details: { unit: "1kg", quality: "Refinada", bulk: "20 Unidades" } },
+      { id: "v19b", name: "Arroz Amanecer", desc: "Arroz Blanco Tipo 1", price: 0.00, image: productArrozAmanecer900g, details: { unit: "900g", quality: "Tipo 1", bulk: "24 Unidades", origin: "Venezuela" } },
+      { id: "v5", name: "Azúcar Amanecer", desc: "Refinada de primera calidad", price: 0.00, image: productAzucarAmanecer1kg, details: { unit: "1kg", quality: "Refinada", bulk: "20 Unidades", origin: "Venezuela" } },
       { id: "v5b", name: "Azúcar Montalbán", desc: "Refinada de primera calidad", price: 1.30, image: productAzucarMontalban, details: { unit: "1kg", quality: "Refinada", bulk: "20 Unidades" } },
       { id: "v4", name: "Pasta Capri", desc: "Pasta corta (Tornillo)", price: 0.00, details: { unit: "1kg", quality: "Durum Semolina", bulk: "12 Unidades" } },
       { id: "v20", name: "Pasta Capri Corta", desc: "Pluma / Pena", price: 0.00, details: { unit: "500g", quality: "Pluma", bulk: "12 Unidades" } },
@@ -249,31 +292,31 @@ const categories = [
       { id: "v4b", name: "Pasta Mary", desc: "Pasta corta (Tornillo)", price: 1.50, details: { unit: "1kg", quality: "Durum Semolina", bulk: "12 Unidades" } },
       { id: "v8", name: "Avena Lassie", desc: "Hojuelas de avena tradicionales", price: 0.00, image: productAvenaLassie, details: { unit: "800g", quality: "En Hojuelas", bulk: "12 Unidades" } },
       { id: "v8b", name: "Avena Quaker", desc: "Avena en hojuelas fortificada", price: 0.00, image: productAvenaQuaker, details: { unit: "400g", quality: "Fortificada", bulk: "12 Unidades" } },
-      { id: "v9", name: "Caraotas Negras", desc: "Granos seleccionados Amanecer", price: 0.00, details: { unit: "400g", quality: "Tipo I", bulk: "12 Unidades" } },
-      { id: "v10", name: "Lentejas", desc: "Granos seleccionados Amanecer", price: 0.00, details: { unit: "400g", quality: "Tipo I", bulk: "12 Unidades" } },
+      { id: "v9", name: "Caraotas Negras", desc: "Granos seleccionados Amanecer", price: 0.00, image: productCaraotasNegrasAmanecer400g, details: { unit: "400g", quality: "Tipo I", bulk: "12 Unidades", origin: "Venezuela" } },
+      { id: "v10", name: "Lentejas", desc: "Granos seleccionados Amanecer", price: 0.00, image: productLentejasAmanecer400g, details: { unit: "400g", quality: "Tipo I", bulk: "12 Unidades", origin: "Venezuela" } },
     ],
   },
   {
     icon: Coffee,
     title: "Café",
-    image: catViveres, // Using general Viveres image as placeholder
+    image: catCafe,
     description: "La mejor selección de café venezolano para despertar tus sentidos.",
     products: [
-      { id: "kf1", name: "Café Amanecer", desc: "Café molido gourmet", price: 0.00, details: { unit: "100g", quality: "Gourmet", bulk: "50 Unidades" } },
-      { id: "kf2", name: "Café Amanecer", desc: "Café molido gourmet", price: 0.00, details: { unit: "200g", quality: "Gourmet", bulk: "24 Unidades" } },
-      { id: "kf3", name: "Café Amanecer", desc: "Café molido gourmet", price: 0.00, details: { unit: "500g", quality: "Gourmet", bulk: "10 Unidades" } },
-      { id: "kf4", name: "Café Fama de América", desc: "Tradición venezolana", price: 0.00, details: { unit: "250g", quality: "Clásico", bulk: "15 Unidades" } },
-      { id: "kf5", name: "Café Fama de América", desc: "Tradición venezolana", price: 0.00, details: { unit: "500g", quality: "Clásico", bulk: "6 Unidades" } },
-      { id: "kf6", name: "Café Flor de Arauca", desc: "Sabor y aroma inigualable", price: 0.00, details: { unit: "200g", quality: "Premium", bulk: "15 Unidades" } },
-      { id: "kf7", name: "Café Flor de Arauca", desc: "Sabor y aroma inigualable", price: 0.00, details: { unit: "500g", quality: "Premium", bulk: "10 Unidades" } },
-      { id: "kf8", name: "Café Turpial", desc: "Café puro de altura", price: 0.00, details: { unit: "250g", quality: "Excelso", bulk: "15 Unidades" } },
-      { id: "kf9", name: "Café Turpial", desc: "Café puro de altura", price: 0.00, details: { unit: "500g", quality: "Excelso", bulk: "10 Unidades" } },
+      { id: "kf1", name: "Café Amanecer", desc: "Café molido gourmet", price: 0.00, image: productCafeAmanecer100g, details: { unit: "100g", quality: "Gourmet", bulk: "50 Unidades", origin: "Venezuela" } },
+      { id: "kf2", name: "Café Amanecer", desc: "Café molido gourmet", price: 0.00, image: productCafeAmanecer200g, details: { unit: "200g", quality: "Gourmet", bulk: "24 Unidades", origin: "Venezuela" } },
+      { id: "kf3", name: "Café Amanecer", desc: "Café molido gourmet", price: 0.00, image: productCafeAmanecer500g, details: { unit: "500g", quality: "Gourmet", bulk: "10 Unidades", origin: "Venezuela" } },
+      { id: "kf4", name: "Café Fama de América", desc: "Tradición venezolana", price: 0.00, image: productCafeFamaAmerica250g, details: { unit: "250g", quality: "Clásico", bulk: "15 Unidades", origin: "Venezuela" } },
+      { id: "kf5", name: "Café Fama de América", desc: "Tradición venezolana", price: 0.00, image: productCafeFamaAmerica500g, details: { unit: "500g", quality: "Clásico", bulk: "6 Unidades", origin: "Venezuela" } },
+      { id: "kf6", name: "Café Flor de Arauca", desc: "Calidad Gourmet", price: 0.00, image: productCafeFlorDeArauca200g, details: { unit: "200g", quality: "Gourmet", bulk: "15 Unidades", origin: "Venezuela" } },
+      { id: "kf7", name: "Café Flor de Arauca", desc: "Calidad Gourmet", price: 0.00, image: productCafeFlorDeArauca500g, details: { unit: "500g", quality: "Gourmet", bulk: "10 Unidades", origin: "Venezuela" } },
+      { id: "kf8", name: "Café Turpial", desc: "Café puro de altura", price: 0.00, image: productCafeTurpial250g, details: { unit: "250g", quality: "Excelso", bulk: "15 Unidades", origin: "Venezuela" } },
+      { id: "kf9", name: "Café Turpial", desc: "Café puro de altura", price: 0.00, image: productCafeTurpial500g, details: { unit: "500g", quality: "Excelso", bulk: "10 Unidades", origin: "Venezuela" } },
     ],
   },
   {
     icon: GlassWater,
     title: "Lácteos y Bebidas",
-    image: catViveres, // Placeholder
+    image: catLacteos,
     description: "Leche en polvo y bebidas achocolatadas para toda la familia.",
     products: [
       { id: "mk1", name: "Leche La Campesina", desc: "Leche completa en polvo enriquecida", price: 0.00, image: productLecheLaCampesina400g, details: { unit: "400g", quality: "Completa Enriquecida", bulk: "27 Unidades" } },
@@ -293,7 +336,7 @@ const categories = [
   {
     icon: UtensilsCrossed,
     title: "Enlatados y Salsas",
-    image: catCharcuteria, // Placeholder
+    image: catEnlatados,
     description: "Atún, sardinas, salsas y aceites para complementar tus comidas.",
     products: [
       { id: "cn1", name: "Atún Willinger", desc: "Lomo de atún en aceite vegetal", price: 0.00, details: { unit: "100g", quality: "En Aceite", bulk: "48 Unidades" } },
@@ -305,8 +348,8 @@ const categories = [
       { id: "v6b", name: "Mayonesa Kraft", desc: "La mayonesa N°1 de Venezuela", price: 0.00, image: productMayonesaKraft445g, details: { unit: "445g", quality: "Original", bulk: "12 Unidades" } },
       { id: "cn5", name: "Vinagre Mavesa", desc: "Vinagre blanco pasteurizado", price: 0.00, image: productVinagreMavesa500ml, details: { unit: "500ml", quality: "Blanco", bulk: "24 Unidades" } },
       { id: "cn6", name: "Vinagre Mavesa", desc: "Vinagre blanco pasteurizado", price: 0.00, image: productVinagreMavesa1l, details: { unit: "1L", quality: "Blanco", bulk: "12 Unidades" } },
-      { id: "cn7", name: "Aceite Amanecer", desc: "Aceite vegetal comestible", price: 0.00, details: { unit: "500ml", quality: "Vegetal", bulk: "12 Unidades" } },
-      { id: "cn8", name: "Aceite Amanecer", desc: "Aceite vegetal comestible", price: 0.00, details: { unit: "828ml", quality: "Vegetal", bulk: "12 Unidades" } },
+      { id: "cn7", name: "Aceite Amanecer", desc: "Aceite Comestible de Soya", price: 0.00, image: productAceiteAmanecer500ml, details: { unit: "500ml", quality: "Soya", bulk: "12 Unidades", origin: "Venezuela" } },
+      { id: "cn8", name: "Aceite Amanecer", desc: "Aceite Comestible de Soya", price: 0.00, image: productAceiteAmanecer828ml, details: { unit: "828ml", quality: "Soya", bulk: "12 Unidades", origin: "Venezuela" } },
       { id: "cn9", name: "Aceite Vatel", desc: "Aceite puro de soya", price: 0.00, image: productAceiteVatel1l, details: { unit: "1L", quality: "Soya", bulk: "12 Unidades" } },
       { id: "cn10", name: "Aceite Amacorp", desc: "Aceite puro de soya", price: 0.00, image: productAceiteAmacorp900ml, details: { unit: "900ml", quality: "Soya", bulk: "12 Unidades" } },
       { id: "v3", name: "Margarina Mavesa", desc: "La preferida de todos", price: 2.50, details: { unit: "500g", quality: "Premium", bulk: "12 Unidades" } },
@@ -317,16 +360,18 @@ const categories = [
   {
     icon: ChefHat,
     title: "Condimentos",
-    image: catViveres, // Placeholder
+    image: catCondimentos,
     description: "Dale el mejor sabor a tus comidas con nuestros condimentos.",
     products: [
-      { id: "sp1", name: "Onoto Amparito", desc: "Color natural para tus comidas", price: 0.00, details: { unit: "Sobre", quality: "En Grano/Polvo", bulk: "18 Unidades" } },
-      { id: "sp2", name: "Colorante Amparito", desc: "Color rojo vegetal", price: 0.00, details: { unit: "Sobre", quality: "Polvo", bulk: "18 Unidades" } },
-      { id: "sp3", name: "Bicarbonato Amparito", desc: "Bicarbonato de sodio puro", price: 0.00, details: { unit: "Sobre", quality: "Puro", bulk: "18 Unidades" } },
-      { id: "sp4", name: "Caldo de Gallina GUT", desc: "Cubitos de caldo concentrado", price: 0.00, details: { unit: "Caja", quality: "Concentrado", bulk: "18 Unidades" } },
-      { id: "sp5", name: "Adobo Completo GUT", desc: "Mezcla de especias y sal", price: 0.00, details: { unit: "Pote", quality: "Completo", bulk: "18 Unidades" } },
-      { id: "sp6", name: "Salsa p/ Espaguete GUT", desc: "Mezcla en polvo para salsa", price: 0.00, details: { unit: "Sobre", quality: "Napolitana", bulk: "18 Unidades" } },
-      { id: "sp7", name: "Ajo, Cebolla y Perejil", desc: "Mezcla de especias GUT", price: 0.00, details: { unit: "Pote", quality: "Mix", bulk: "18 Unidades" } },
+      { id: "sp1", name: "Color Onoto Amparito", desc: "Color natural para tus comidas", price: 0.00, image: productColorOnotoAmparito20g, details: { unit: "20g", quality: "Polvo", bulk: "18 Unidades" } },
+      { id: "sp2", name: "Colorante Amparito", desc: "Color rojo vegetal", price: 0.00, image: productColoranteAmparito20g, details: { unit: "20g", quality: "Polvo", bulk: "18 Unidades" } },
+      { id: "sp3", name: "Bicarbonato de Sodio Amparito", desc: "Bicarbonato puro", price: 0.00, image: productBicarbonatoSodioAmparito20g, details: { unit: "20g", quality: "Puro", bulk: "18 Unidades" } },
+      { id: "sp4", name: "Caldo de Pollo GUT", desc: "Cubitos de caldo sabor a pollo", price: 0.00, image: productGutCaldoPollo24g, details: { unit: "24g", quality: "Concentrado", bulk: "18 Unidades" } },
+      { id: "sp5", name: "Adobo Completo GUT", desc: "Mezcla de especias y sal", price: 0.00, image: productGutAdoboCompleto24g, details: { unit: "24g", quality: "Completo", bulk: "18 Unidades" } },
+      { id: "sp6", name: "Sabroseador Completo GUT", desc: "Mezcla para condimentar", price: 0.00, image: productGutSabroseadorCompleto24g, details: { unit: "24g", quality: "Completo", bulk: "18 Unidades" } },
+      { id: "sp7", name: "Salsa para Espaguettis GUT", desc: "Mezcla para preparar salsa", price: 0.00, image: productGutSalsaEspaguettis34g, details: { unit: "34g", quality: "Lista", bulk: "18 Unidades" } },
+      { id: "sp8", name: "Sazonador Arroz con Pollo GUT", desc: "Sazonador para arroz", price: 0.00, image: productGutSazonadorArrozPollo35g, details: { unit: "35g", quality: "Mix", bulk: "18 Unidades" } },
+      { id: "sp9", name: "Ajo, Cebolla y Perejil GUT", desc: "Caldo deshidratado", price: 0.00, image: productGutAjoCebollaPerejil20g, details: { unit: "20g", quality: "Mix", bulk: "18 Unidades" } },
     ],
   },
   {
@@ -335,10 +380,10 @@ const categories = [
     image: catHigiene,
     description: "Cuida tu bienestar con los mejores productos.",
     products: [
-      { id: "h1", name: "Papel Higiénico Rosal", desc: "Plus texturizado suave", price: 2.50, details: { unit: "4 Rollos", quality: "Doble Hoja", bulk: "12 Paquetes (200 hojas)" } },
-      { id: "h1b", name: "Papel Higiénico Rosal", desc: "Plus texturizado suave", price: 0.00, details: { unit: "4 Rollos", quality: "Doble Hoja", bulk: "12 Paquetes (400 hojas)" } },
-      { id: "h1c", name: "Papel Higiénico Rosal", desc: "Plus texturizado suave", price: 0.00, details: { unit: "4 Rollos", quality: "Doble Hoja", bulk: "12 Paquetes (600 hojas)" } },
-      { id: "h7", name: "Papel H. Luciano's", desc: "Papel higiénico hojas simples", price: 0.00, details: { unit: "4 Rollos", quality: "215 Hojas", bulk: "12 Paquetes" } },
+      { id: "h1", name: "Papel Higiénico Rosal Plus", desc: "180 Hojas, Doble Hoja", price: 0.00, image: productPapelRosalPlus180h, details: { unit: "4 Rollos", quality: "Ultra Confort", bulk: "Bulto 12 Unidades" } },
+      { id: "h1b", name: "Papel Higiénico Rosal Plus", desc: "400 Hojas, Texturizado", price: 0.00, image: productPapelRosalPlus400h, details: { unit: "4 Rollos", quality: "Nuevo Acolchado", bulk: "Bulto 12 Unidades" } },
+      { id: "h1c", name: "Papel Higiénico Rosal Plus", desc: "600 Hojas, Más de 100 Usos", price: 0.00, image: productPapelRosalPlus600h, details: { unit: "4 Rollos XXXG", quality: "Higiene Total", bulk: "Bulto 12 Unidades" } },
+      { id: "h7", name: "Papel Higiénico Luciano Morado", desc: "Venezolano de punta a punta, Más Suave", price: 0.00, image: productPapelLucianoMorado215h, details: { unit: "4 Rollos", quality: "215 Hojas", bulk: "Bulto 12 Paquetes" } },
       { id: "h2", name: "Pasta Dental Colgate", desc: "Protección Anticaries", price: 2.00, details: { unit: "100ml", quality: "Anticaries", bulk: "12 Unidades" } },
       { id: "h3", name: "Shampoo Bio", desc: "Manzanilla y Miel / Variado", price: 4.50, details: { unit: "400ml", quality: "Natural", bulk: "12 Unidades" } },
       { id: "h4", name: "Jabón Mimlot", desc: "Aloe Vera / Avena", price: 2.20, details: { unit: "Pack x3", quality: "Hidratante", bulk: "36 Packs" } },
@@ -353,8 +398,8 @@ const categories = [
     description: "Mantén tu hogar reluciente y desinfectado.",
     products: [
       { id: "l1", name: "Detergente Kiero", desc: "Multiusos en polvo", price: 3.20, details: { unit: "1kg", quality: "Multiusos", bulk: "10 Unidades" } },
-      { id: "l7", name: "Crema Lavaplatos Las Llaves", desc: "Arrancagrasa con limón", price: 0.00, details: { unit: "250g", quality: "Crema", bulk: "36 Unidades" } },
-      { id: "l8", name: "Crema Lavaplatos Las Llaves", desc: "Arrancagrasa con limón", price: 0.00, details: { unit: "500g", quality: "Crema", bulk: "18 Unidades" } },
+      { id: "l7", name: "Lavaplatos Las Llaves Crema", desc: "Multiuso, cuida tus manos", price: 0.00, image: productLavaplatosLlavesCrema250g, details: { unit: "250g", quality: "Crema Multiuso", bulk: "Caja 36 Unidades" } },
+      { id: "l8", name: "Lavaplatos Las Llaves Crema", desc: "Multiuso, cuida tus manos", price: 0.00, image: productLavaplatosLlavesCrema500g, details: { unit: "500g", quality: "Crema Multiuso", bulk: "Caja 18 Unidades" } },
       { id: "l2", name: "Cloro Nevex", desc: "Blanqueador desinfectante", price: 1.50, details: { unit: "1L", quality: "Blanqueador", bulk: "12 Unidades" } },
       { id: "l3", name: "Desinfectante", desc: "Lavanda / Bebé", price: 2.00, details: { unit: "1L", quality: "Aromas Variados", bulk: "12 Unidades" } },
       { id: "l4", name: "Suavizante", desc: "Para ropa delicada", price: 2.80, details: { unit: "1L", quality: "Suavidad Profunda", bulk: "12 Unidades" } },
@@ -549,7 +594,7 @@ const ProductsSection = () => {
 
             {/* Product Grid */}
             {filteredProducts.length > 0 ? (
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-5">
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
                 {filteredProducts.map((product, i) => {
                   const hasImage = !!product.image;
 
@@ -558,20 +603,30 @@ const ProductsSection = () => {
                       key={product.id}
                       initial={{ opacity: 0, y: 20, scale: 0.95 }}
                       animate={{ opacity: 1, y: 0, scale: 1 }}
-                      transition={{ duration: 0.35, delay: i * 0.06, ease: "easeOut" }}
+                      transition={{ duration: 0.4, delay: i * 0.05, ease: "easeOut" }}
                       className={`${hasImage ? "card-product-featured" : "card-product"} flex flex-col group`}
                     >
                       {/* Image / Icon Area */}
                       {hasImage ? (
-                        <div className="relative w-full h-52 bg-gradient-to-br from-amber-50 to-orange-50 flex items-center justify-center overflow-hidden cursor-pointer" onClick={() => setSelectedProduct(product)}>
+                        <div
+                          className="product-image-container relative w-full h-56 bg-gradient-to-br from-slate-50 to-gray-50 flex items-center justify-center cursor-pointer"
+                          onClick={() => setSelectedProduct(product)}
+                        >
                           <img
                             src={product.image}
                             alt={product.name}
-                            className="h-full w-full object-contain p-1 mix-blend-multiply group-hover:scale-110 transition-transform duration-500"
+                            className="h-full w-full object-contain p-2 mix-blend-multiply"
                           />
+                          {/* Hover Overlay */}
+                          <div className="product-image-overlay rounded-t-2xl">
+                            <span className="px-4 py-2 bg-white/90 backdrop-blur-sm rounded-full text-sm font-semibold text-foreground shadow-lg transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                              <Eye className="w-4 h-4 inline mr-1.5 -mt-0.5" />
+                              Vista rápida
+                            </span>
+                          </div>
                           {product.badge && (
-                            <div className="absolute top-3 left-3">
-                              <span className="badge-info text-[10px] shadow-sm">
+                            <div className="absolute top-3 left-3 z-10">
+                              <span className="badge-info text-[10px] shadow-sm bg-white/90 backdrop-blur-sm">
                                 <Package className="w-3 h-3" />
                                 {product.badge}
                               </span>
@@ -579,7 +634,10 @@ const ProductsSection = () => {
                           )}
                         </div>
                       ) : (
-                        <div className="w-full h-28 bg-gradient-to-br from-primary/5 to-primary/10 flex items-center justify-center cursor-pointer" onClick={() => setSelectedProduct(product)}>
+                        <div
+                          className="w-full h-32 bg-gradient-to-br from-primary/5 to-primary/10 flex items-center justify-center cursor-pointer"
+                          onClick={() => setSelectedProduct(product)}
+                        >
                           {(() => {
                             const cat = categories.find(c => c.title === product.category) || categories[0];
                             const Icon = cat.icon;
@@ -594,18 +652,17 @@ const ProductsSection = () => {
 
                       {/* Content */}
                       <div className="p-5 flex flex-col flex-1">
-                        <div onClick={() => setSelectedProduct(product)} className="cursor-pointer">
-                          <h4 className="font-heading font-bold text-foreground text-lg mb-1 line-clamp-1 group-hover:text-primary transition-colors">
+                        <div onClick={() => setSelectedProduct(product)} className="cursor-pointer mb-3">
+                          <h4 className="font-heading font-bold text-foreground text-lg mb-1 line-clamp-1 group-hover:text-primary transition-colors duration-300">
                             {product.name}
                           </h4>
-
-                          <p className="text-muted-foreground text-sm mb-4 line-clamp-2 flex-1">
+                          <p className="text-muted-foreground text-sm line-clamp-2">
                             {product.desc}
                           </p>
                         </div>
 
-                        {/* Price + Buttons */}
-                        <div className="mt-auto space-y-3">
+                        {/* Price + Actions */}
+                        <div className="mt-auto pt-3 border-t border-border/50 space-y-3">
                           <div className="flex items-center justify-between">
                             <div className="price-tag">
                               <span className="currency">$</span>
@@ -613,7 +670,7 @@ const ProductsSection = () => {
                             </div>
                             <button
                               onClick={() => setSelectedProduct(product)}
-                              className="p-2 rounded-lg text-muted-foreground hover:bg-muted hover:text-foreground transition-colors"
+                              className="p-2 rounded-xl text-muted-foreground hover:bg-primary/10 hover:text-primary transition-all duration-300"
                               title="Ver detalles"
                             >
                               <Eye className="w-5 h-5" />
@@ -624,7 +681,7 @@ const ProductsSection = () => {
                             <Button
                               variant="outline"
                               size="sm"
-                              className="w-full text-xs h-9"
+                              className="w-full text-xs h-10 rounded-xl hover:border-primary/30 hover:bg-primary/5 transition-colors"
                               onClick={() => setSelectedProduct(product)}
                             >
                               Detalles
@@ -636,7 +693,7 @@ const ProductsSection = () => {
                                 price: product.price,
                                 image: product.image || product.categoryImage
                               })}
-                              className="flex items-center justify-center gap-1.5 h-9 rounded-md font-medium text-xs text-primary-foreground transition-all duration-300 active:scale-95 hover:shadow-lg w-full"
+                              className="flex items-center justify-center gap-1.5 h-10 rounded-xl font-semibold text-xs text-primary-foreground transition-all duration-300 active:scale-95 hover:shadow-lg hover:shadow-primary/20 w-full"
                               style={{ background: "var(--gradient-premium)" }}
                             >
                               <Plus className="w-3.5 h-3.5" />
@@ -711,7 +768,7 @@ const ProductsSection = () => {
             {selectedProduct && (
               <div className="flex flex-col md:flex-row h-full">
                 {/* Image Section */}
-                <div className="w-full md:w-1/2 bg-gradient-to-br from-amber-50 to-orange-50 flex items-center justify-center p-8 relative min-h-[250px]">
+                <div className="w-full md:w-1/2 bg-gradient-to-br from-slate-50 to-gray-50 flex items-center justify-center p-8 relative min-h-[250px]">
                   {selectedProduct.image ? (
                     <img
                       src={selectedProduct.image}

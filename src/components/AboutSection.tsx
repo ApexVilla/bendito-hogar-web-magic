@@ -8,16 +8,22 @@ const features = [
     icon: Heart,
     title: "Cercanía",
     description: "Somos parte de tu comunidad, siempre listos para atenderte con calidez.",
+    color: "from-rose-500/10 to-pink-500/10",
+    iconColor: "text-rose-500",
   },
   {
     icon: Users,
     title: "Confianza",
     description: "Productos de calidad a precios justos para tu familia.",
+    color: "from-blue-500/10 to-indigo-500/10",
+    iconColor: "text-blue-500",
   },
   {
     icon: Star,
     title: "Variedad",
     description: "Encuentra todo lo que necesitas en un solo lugar, cerca de tu hogar.",
+    color: "from-amber-500/10 to-orange-500/10",
+    iconColor: "text-amber-500",
   },
 ];
 
@@ -50,15 +56,17 @@ const AboutSection = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: index * 0.2 }}
-              className="card-product p-8 text-center"
+              className="card-product p-8 text-center group"
             >
-              <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
-                <feature.icon className="w-8 h-8 text-primary" />
+              <div className={`w-18 h-18 rounded-2xl bg-gradient-to-br ${feature.color} flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300`}
+                style={{ width: "4.5rem", height: "4.5rem" }}
+              >
+                <feature.icon className={`w-8 h-8 ${feature.iconColor}`} />
               </div>
               <h3 className="font-heading text-xl font-bold text-foreground mb-3">
                 {feature.title}
               </h3>
-              <p className="text-muted-foreground">{feature.description}</p>
+              <p className="text-muted-foreground leading-relaxed">{feature.description}</p>
             </motion.div>
           ))}
         </div>
